@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeu 2D Histoire Unique</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'VT323', monospace;
+        }
+
+        body {
+            background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+            color: white;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .story-banner {
+            text-align: center;
+            padding: 3rem;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: #fff;
+            text-shadow: 3px 3px 0px #000;
+            margin-bottom: 1rem;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #FF6B6B;
+            }
+            to {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FF6B6B;
+            }
+        }
+
+        .story-preview {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 2rem 0;
+            color: #333;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .game-screenshot {
+            width: 100%;
+            height: 400px;
+            background: url('/api/placeholder/1200/400') center/cover;
+            border-radius: 15px;
+            margin: 2rem 0;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 1.2rem 2.5rem;
+            background: linear-gradient(45deg, #FF6B6B, #FF8E53);
+            border: none;
+            border-radius: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.8rem;
+            margin-top: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-shadow: 2px 2px #d45d5d;
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+        }
+
+        .download-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.6);
+        }
+
+        .story-quote {
+            font-style: italic;
+            font-size: 1.5rem;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .key-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            color: #333;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="story-banner">
+            <h1>📖 Une Histoire Unique 📖</h1>
+            <p style="font-size: 1.8rem;">Plongez dans une aventure 2D extraordinaire</p>
+        </div>
+
+        <div class="story-preview">
+            <h2 style="font-size: 2.8rem; color: #FF6B6B; margin-bottom: 1.5rem;">L'Histoire</h2>
+            <p style="font-size: 1.6rem; line-height: 1.6; margin-bottom: 2rem;">
+                Embarquez dans une quête épique à travers un monde en 2D rempli de mystères et d'aventures. 
+                Chaque choix que vous faites influence le déroulement de l'histoire, rendant chaque partie unique.
+            </p>
+        </div>
+
+        <div class="game-screenshot"></div>
+
+        <div class="story-quote">
+            "Une aventure unique où vos choix façonnent le destin du monde..."
+        </div>
+
+        <div class="key-features">
+            <div class="feature">
+                <span class="feature-icon">📜</span>
+                <h3 style="font-size: 2rem; color: #FF6B6B;">Histoire Immersive</h3>
+                <p>Une narration profonde avec des choix qui comptent</p>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">🎨</span>
+                <h3 style="font-size: 2rem; color: #FF6B6B;">Graphismes 2D</h3>
+                <p>Un style artistique unique et captivant</p>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">🎮</span>
+                <h3 style="font-size: 2rem; color: #FF6B6B;">Gameplay Original</h3>
+                <p>Des mécaniques de jeu innovantes</p>
+            </div>
+        </div>
+
+        <div class="story-preview">
+            <h2 style="font-size: 2.5rem; color: #FF6B6B; margin-bottom: 1rem;">✨ Points Clés</h2>
+            <ul style="list-style: none; font-size: 1.4rem; margin-bottom: 2rem;">
+                <li>📖 Histoire riche et immersive</li>
+                <li>🎨 Univers 2D magnifique</li>
+                <li>🔄 Multiples fins possibles</li>
+                <li>🎵 Bande sonore originale</li>
+            </ul>
+            <a href="#" class="download-button">⬇️ Télécharger le Jeu</a>
+        </div>
+    </div>
+</body>
+</html>
